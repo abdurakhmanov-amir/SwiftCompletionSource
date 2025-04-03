@@ -1,0 +1,6 @@
+framework module SwiftCompletionSource {
+  umbrella header "SwiftCompletionSource-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCompletionSource (0.1.0)
+
+DEPENDENCIES:
+  - SwiftCompletionSource (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCompletionSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftCompletionSource: 62788d040843083fa54105397aa3225e3511cf1c
+
+PODFILE CHECKSUM: 35579748e81914de0c479288942f0c63113d8db0
+
+COCOAPODS: 1.13.0

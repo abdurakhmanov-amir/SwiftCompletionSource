@@ -1,0 +1,22 @@
+{
+  "name": "SwiftCompletionSource",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftCompletionSource.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Amir Abdurakhmanov/SwiftCompletionSource",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Amir Abdurakhmanov": "dragon.1993@inbox.ru"
+  },
+  "source": {
+    "git": "https://github.com/Amir Abdurakhmanov/SwiftCompletionSource.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SwiftCompletionSource/Classes/**/*"
+}
