@@ -5,7 +5,7 @@
 //  Created by Amir on 05.04.2025.
 //
 
-public class ResultCompletionSource<TResult> {
+public class CompletionSource<TResult> {
     private var _id : UUID
     private let _notificationName : Notification.Name
     
