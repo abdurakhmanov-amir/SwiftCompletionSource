@@ -1,6 +1,6 @@
 //
 //  SimpleCompletionSource.swift
-//  Pods-SwiftCompletionSource_Example
+//  SwiftCompletionSource
 //
 //  Created by Amir on 05.04.2025.
 //
@@ -11,12 +11,12 @@ public class SimpleCompletionSource {
     
     private var _isCompleted = false
     
-    init() {
+    public init() {
         _id = UUID()
         _notificationName = Notification.Name("\(_id.uuidString)_taskCompletionNotification")
     }
     
-    func WaitForCompletion() async {
+    public func WaitForCompletion() async {
         for await _ in NotificationCenter.default.notifications(named: _notificationName) {
             if _isCompleted {
                 break
@@ -24,7 +24,7 @@ public class SimpleCompletionSource {
         }
     }
     
-    func SetResult() {
+    public func SetResult() {
         if _isCompleted {
             return
         }

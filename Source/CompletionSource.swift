@@ -1,6 +1,6 @@
 //
-//  ResultCompletionSource.swift
-//  Pods-SwiftCompletionSource_Example
+//  CompletionSource.swift
+//  SwiftCompletionSource
 //
 //  Created by Amir on 05.04.2025.
 //
@@ -14,12 +14,12 @@ public class CompletionSource<TResult> {
     
     private var _result: TResult?
     
-    init() {
+    public init() {
         _id = UUID()
         _notificationName = Notification.Name("\(_id.uuidString)_taskCompletionNotification")
     }
     
-    func waitForCompletion() async -> TResult? {
+    public func waitForCompletion() async -> TResult? {
         for await _ in NotificationCenter.default.notifications(named: _notificationName) {
             if _isCompleted || _isCanceled {
                 break;
@@ -33,7 +33,7 @@ public class CompletionSource<TResult> {
         return _result
     }
     
-    func setResult(_ result: TResult) {
+    public func setResult(_ result: TResult) {
         if _isCompleted || _isCanceled {
             return
         }
@@ -44,7 +44,7 @@ public class CompletionSource<TResult> {
         NotificationCenter.default.post(name: _notificationName, object: nil)
     }
     
-    func cancel() {
+    public func cancel() {
         if _isCompleted || _isCanceled {
             return
         }

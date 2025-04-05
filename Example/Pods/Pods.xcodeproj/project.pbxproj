@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		11EC4E3196512F26CFBF4386B4D736C0 /* SwiftCompletionSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B426FC661E2299AB1555F02018B941F0 /* SwiftCompletionSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1978EB0095C0146A6828E6B4E13A38F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		295D3D692DA14A0000669FA8 /* SimpleCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D682DA14A0000669FA8 /* SimpleCompletionSource.swift */; };
-		295D3D6C2DA14A4E00669FA8 /* ResultCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D6B2DA14A4E00669FA8 /* ResultCompletionSource.swift */; };
+		295D3D732DA1BDF100669FA8 /* SimpleCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D722DA1BDF100669FA8 /* SimpleCompletionSource.swift */; };
+		295D3D742DA1BDF100669FA8 /* SimpleCompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D722DA1BDF100669FA8 /* SimpleCompletionSource.swift */; };
+		295D3D762DA1BE2700669FA8 /* CompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D752DA1BE2700669FA8 /* CompletionSource.swift */; };
+		295D3D772DA1BE2700669FA8 /* CompletionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295D3D752DA1BE2700669FA8 /* CompletionSource.swift */; };
 		386D4E24D25D138E05357A5A864039B2 /* Pods-SwiftCompletionSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33220F8E9318ADAA3FB6308D0BB8CA54 /* Pods-SwiftCompletionSource_Example-dummy.m */; };
 		419C54487FB6D6170B080C256C0E691C /* Pods-SwiftCompletionSource_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEF76215CF0C032BBF48B59BDE7482 /* Pods-SwiftCompletionSource_Tests-dummy.m */; };
 		44681038E1B168B67CC4512062F9E7DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -46,8 +48,8 @@
 		10FD63DC5F258A73BE7151355990E56D /* SwiftCompletionSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCompletionSource.release.xcconfig; sourceTree = "<group>"; };
 		1C1B0399C2BC5DE780EEE502E1D6CF60 /* Pods-SwiftCompletionSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCompletionSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1FFC913E7E1F4DA4D05BAE60B48CBCF1 /* Pods-SwiftCompletionSource_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCompletionSource_Tests-Info.plist"; sourceTree = "<group>"; };
-		295D3D682DA14A0000669FA8 /* SimpleCompletionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCompletionSource.swift; sourceTree = "<group>"; };
-		295D3D6B2DA14A4E00669FA8 /* ResultCompletionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCompletionSource.swift; sourceTree = "<group>"; };
+		295D3D722DA1BDF100669FA8 /* SimpleCompletionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCompletionSource.swift; sourceTree = "<group>"; };
+		295D3D752DA1BE2700669FA8 /* CompletionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSource.swift; sourceTree = "<group>"; };
 		33220F8E9318ADAA3FB6308D0BB8CA54 /* Pods-SwiftCompletionSource_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCompletionSource_Example-dummy.m"; sourceTree = "<group>"; };
 		587D322744B6B5D2116EB6B19C3B5273 /* SwiftCompletionSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftCompletionSource.modulemap; sourceTree = "<group>"; };
 		660B0679867227DCB585A234F655C3F9 /* SwiftCompletionSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCompletionSource.debug.xcconfig; sourceTree = "<group>"; };
@@ -148,8 +150,8 @@
 		295D3D672DA149D800669FA8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				295D3D682DA14A0000669FA8 /* SimpleCompletionSource.swift */,
-				295D3D6B2DA14A4E00669FA8 /* ResultCompletionSource.swift */,
+				295D3D722DA1BDF100669FA8 /* SimpleCompletionSource.swift */,
+				295D3D752DA1BE2700669FA8 /* CompletionSource.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -332,6 +334,9 @@
 					71363E7E00336A7E9A66EEE68EE9D280 = {
 						LastSwiftMigration = 1620;
 					};
+					94012263CE41871B7A2A2874491DFCC2 = {
+						LastSwiftMigration = 1620;
+					};
 				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
@@ -383,8 +388,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295D3D6C2DA14A4E00669FA8 /* ResultCompletionSource.swift in Sources */,
-				295D3D692DA14A0000669FA8 /* SimpleCompletionSource.swift in Sources */,
+				295D3D732DA1BDF100669FA8 /* SimpleCompletionSource.swift in Sources */,
+				295D3D772DA1BE2700669FA8 /* CompletionSource.swift in Sources */,
 				386D4E24D25D138E05357A5A864039B2 /* Pods-SwiftCompletionSource_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295D3D742DA1BDF100669FA8 /* SimpleCompletionSource.swift in Sources */,
+				295D3D762DA1BE2700669FA8 /* CompletionSource.swift in Sources */,
 				7E92AD59153964F828A17AFD8C4F1E34 /* SwiftCompletionSource-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 660B0679867227DCB585A234F655C3F9 /* SwiftCompletionSource.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -508,6 +516,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -519,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10FD63DC5F258A73BE7151355990E56D /* SwiftCompletionSource.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
